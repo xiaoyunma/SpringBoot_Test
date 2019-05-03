@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.nxu.yun</groupId>
+	<artifactId>springboot-jsp</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springboot-jsp Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- 将当前项目作为SpringBoot-starter的一个子模块 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.1.RELEASE</version>
+	</parent>
+
+	<!-- 完成全局配置的替换 -->
+	<properties>
+		<java.version>9.0.1</java.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+<!-- 		servlet依赖 -->
+		<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		</dependency>
+		
+<!-- 		Tomcat的支持 -->
+
+         <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-tomcat</artifactId>
+         <scope>provided</scope>
+         </dependency>
+         
+         <dependency>
+         <groupId>org.apache.tomcat.embed</groupId>
+         <artifactId>tomcat-embed-jasper</artifactId>
+         <scope>provided</scope>
+         </dependency>
+         
+         	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.4.1.Final</version>$NO-MVN-MAN-VER$
+		</dependency>
+	</dependencies>
+
+</project>
