@@ -17,7 +17,7 @@
 
 	<!-- 完成全局配置的替换 -->
 	<properties>
-		<java.version>9.0.1</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
@@ -52,11 +52,11 @@
          <scope>provided</scope>
          </dependency>
          
-         	<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>5.4.1.Final</version>$NO-MVN-MAN-VER$
-		</dependency>
+<!--          	<dependency> -->
+<!-- 			<groupId>org.hibernate</groupId> -->
+<!-- 			<artifactId>hibernate-validator</artifactId> -->
+<!-- 			<version>5.4.1.Final</version>$NO-MVN-MAN-VER$ -->
+<!-- 		</dependency> -->
 	</dependencies>
 
 </project>
